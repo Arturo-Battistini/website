@@ -1075,6 +1075,9 @@ footer {
   main {
     padding: 0 3.125rem;
     z-index: -1;
+    &  .introduction {
+      padding-top: 0;
+    }
   }
   body .ham {
     display: inherit;

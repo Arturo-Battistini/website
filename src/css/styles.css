@@ -1392,6 +1392,9 @@ footer .containerUp a i {
     padding: 0 3.125rem;
     z-index: -1;
   }
+  main .introduction {
+    padding-top: 0;
+  }
   body .ham {
     display: inherit;
     -webkit-animation: ham 0.3s linear forwards;

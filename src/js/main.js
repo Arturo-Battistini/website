@@ -71,78 +71,80 @@ const runner = mql => {
 //------------------------------------------------------------------------------skills
 
 //---------------botones
-const btn1 = document.getElementById("btn1")
-const btn2 = document.getElementById("btn2")
-const btn3 = document.getElementById("btn3")
-const btn4 = document.getElementById("btn4")
+function skills(){
 
-//--------------------- Cajas usables
-const box1 = document.querySelector('.box1')
-const box2 = document.querySelector('.box2')
-const box3 = document.querySelector('.box3')
-const box4 = document.querySelector('.box4')
+    const btn1 = document.getElementById("btn1")
+    const btn2 = document.getElementById("btn2")
+    const btn3 = document.getElementById("btn3")
+    const btn4 = document.getElementById("btn4")
 
-// Logica para saber si tienen una clase 
-const box1t = box1.classList.contains('inactivo')
-const box2t = box1.classList.contains('inactivo')
-const box3t = box1.classList.contains('inactivo')
-const box4t = box1.classList.contains('inactivo')
+    //--------------------- Cajas usables
+    const box1 = document.querySelector('.box1')
+    const box2 = document.querySelector('.box2')
+    const box3 = document.querySelector('.box3')
+    const box4 = document.querySelector('.box4')
 
-btn1.addEventListener("click", () => {
-    if (box1t === false) { 
-        box1.classList.remove('inactivo')
-        btn2.classList.remove('selected')
-        btn3.classList.remove('selected')
-        btn4.classList.remove('selected')
-        btn1.classList.add('selected')
-        box2.classList.add('inactivo')
-        box3.classList.add('inactivo')
-        box4.classList.add('inactivo')
-    }
-})
-btn2.addEventListener("click", () => {
-    if (box2t === false) {
-        btn2.classList.add('selected')
-        btn1.classList.remove('selected')
-        btn3.classList.remove('selected')
-        btn4.classList.remove('selected')
-        box2.classList.remove('inactivo')
-        box1.classList.add('inactivo')
-        box3.classList.add('inactivo')
-        box4.classList.add('inactivo')
+    // Logica para saber si tienen una clase 
+    const box1t = box1.classList.contains('inactivo')
+    const box2t = box1.classList.contains('inactivo')
+    const box3t = box1.classList.contains('inactivo')
+    const box4t = box1.classList.contains('inactivo')
 
-    }
-})
+    btn1.addEventListener("click", () => {
+        if (box1t === false) { 
+            box1.classList.remove('inactivo')
+            btn2.classList.remove('selected')
+            btn3.classList.remove('selected')
+            btn4.classList.remove('selected')
+            btn1.classList.add('selected')
+            box2.classList.add('inactivo')
+            box3.classList.add('inactivo')
+            box4.classList.add('inactivo')
+        }
+    })
+    btn2.addEventListener("click", () => {
+        if (box2t === false) {
+            btn2.classList.add('selected')
+            btn1.classList.remove('selected')
+            btn3.classList.remove('selected')
+            btn4.classList.remove('selected')
+            box2.classList.remove('inactivo')
+            box1.classList.add('inactivo')
+            box3.classList.add('inactivo')
+            box4.classList.add('inactivo')
 
-btn3.addEventListener("click", () => {
-    if (box3t === false) {
-        btn3.classList.add('selected')
-        btn1.classList.remove('selected')
-        btn2.classList.remove('selected')
-        btn4.classList.remove('selected')
-        box2.classList.remove('inactivo')
-        box3.classList.remove('inactivo')
-        box1.classList.add('inactivo')
-        box2.classList.add('inactivo')
-        box4.classList.add('inactivo')
+        }
+    })
 
-    }
-})
-btn4.addEventListener("click", () => {
-    if (box4t === false) {
-        btn4.classList.add('selected')
-        btn1.classList.remove('selected')
-        btn3.classList.remove('selected')
-        btn2.classList.remove('selected')
-        box2.classList.remove('inactivo')
-        box4.classList.remove('inactivo')
-        box2.classList.add('inactivo')
-        box3.classList.add('inactivo')
-        box1.classList.add('inactivo')
+    btn3.addEventListener("click", () => {
+        if (box3t === false) {
+            btn3.classList.add('selected')
+            btn1.classList.remove('selected')
+            btn2.classList.remove('selected')
+            btn4.classList.remove('selected')
+            box2.classList.remove('inactivo')
+            box3.classList.remove('inactivo')
+            box1.classList.add('inactivo')
+            box2.classList.add('inactivo')
+            box4.classList.add('inactivo')
 
-    }
-})
+        }
+    })
+    btn4.addEventListener("click", () => {
+        if (box4t === false) {
+            btn4.classList.add('selected')
+            btn1.classList.remove('selected')
+            btn3.classList.remove('selected')
+            btn2.classList.remove('selected')
+            box2.classList.remove('inactivo')
+            box4.classList.remove('inactivo')
+            box2.classList.add('inactivo')
+            box3.classList.add('inactivo')
+            box1.classList.add('inactivo')
 
+        }
+    })
+}
 /* // Cards
 /*  */
 function tarjetas() {
@@ -240,6 +242,8 @@ function tarjetas() {
     })
 
 }
+
+skills()
 tarjetas() 
 //------------------------------------------------------------------------LLamados
 header()

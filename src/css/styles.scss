@@ -142,9 +142,10 @@ section {
 
   50% {
     opacity: 1;
-    transform: translateY(0%);
+    transform: translateY(-10%);
   }
   100% {
+    transform: translateY(-10%);
     opacity: 0;
   }
 }
@@ -194,15 +195,15 @@ section {
 
 @keyframes intro {
   0% {
-    height: 10px;
+
     visibility: hidden;
   }
   50% {
-    height: 10px;
+
     visibility: hidden;
   }
   99% {
-    height: 10px;
+
     visibility: hidden;
   }
   100% {
@@ -455,25 +456,9 @@ body {
 }
 
 //-------------------------------------------------------main
-@keyframes maina {
-  0% {
-    height: 10px;
-    visibility: hidden;
-  }
-  50% {
-    height: 10px;
-    visibility: hidden;
-  }
-  99% {
-    height: 10px;
-    visibility: hidden;
-  }
-  100% {
-    visibility: visible;
-  }
-}
+
 main {
-  animation: maina 4s ease-in-out forwards;
+
   overflow-x: hidden;
   display: flex;
   z-index: 0;

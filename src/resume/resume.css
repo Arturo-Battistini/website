@@ -307,6 +307,9 @@ body .container3 .skillContainer3 .spani i {
   }
 }
 @media (max-width: 461px) {
+  /*   html body .container1 .infoContainer{
+      padding: 10px;
+    } */
   html body .container3 {
     text-align: center;
     -ms-grid-columns: 1fr;

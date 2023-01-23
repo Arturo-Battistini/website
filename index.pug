@@ -163,7 +163,7 @@ html(lang="es")
       a(href="mailto:aabattistini@gmail.com" target=("blank")) aabattistini@gmail.com
     main.main
       //------------------------------------------------introduccion
-      .introduction(data-aos='fade-down' )
+      .introduction(data-aos='zoom-out' data-aos-easing="linear" data-aos-duration="2000" data-aos-delay="3000")
         div.introductionTitle
           h5 Hola, me llamo
         div
@@ -175,7 +175,7 @@ html(lang="es")
         div.btn
           a(href="https://platzi.com/p/andresbattistini/" target="blank") Cursos Aprobados
       //-----------------------------------------------------perfil
-      section#perfilContainer(data-aos='fade-up' data-aos-easing="linear" data-aos-duration="500" )
+      section#perfilContainer(data-aos='fade-up' data-aos-easing="linear" data-aos-duration="1000" )
         h2.estiloTitulos Acerca de mi
         .perfil
           .pfIzquierdo
@@ -200,7 +200,7 @@ html(lang="es")
                 picture 
                   img(src="src/assets/images/perfil.jpg", alt="")
       // -------------------------------------------------experiencia
-      section#Expecience.skillsContainer(data-aos='fade-down' data-aos-easing="linear" data-aos-duration="500" )
+      section#Expecience.skillsContainer(data-aos='fade-down' data-aos-easing="linear" data-aos-duration="700" )
         h2.estiloTitulos Experiencia
         .skills
           ul
@@ -234,7 +234,7 @@ html(lang="es")
               p Mi objetivo es iniciar como programador Front End
               p Con los conocimientos que he adquirido y los cursos aprobados me siento capaz de empezar  como principiante.  
       //------------------------------------------------Cosas que he construido
-      section#Work.built(data-aos='zoom-in' data-aos-easing="linear" data-aos-duration="500" )
+      section#Work.built(data-aos='zoom-in' data-aos-easing="linear" data-aos-duration="700" )
         h2.estiloTitulos Cosas que he construido
         .builtContainer
           article.template.built1(data-aos='fade-right' data-aos-easing="linear" data-aos-duration="500" data-aos-delay="200")
@@ -255,7 +255,7 @@ html(lang="es")
                   li JavaScript
                   li Prepross
               .builtLayer
-          article.template.built2(data-aos='fade-left' data-aos-easing="linear" data-aos-duration="500" data-aos-delay="800" )
+          article.template.built2(data-aos='fade-left' data-aos-easing="linear" data-aos-duration="500" data-aos-delay="300" )
             .builtContainerLeft
               picture
                 img(src="src/assets/images/miboda.jpg", alt="")
@@ -273,7 +273,7 @@ html(lang="es")
                   li Prepross
               .builtLayer
       //---------------------------------------------------- tarjetas
-      section.cardsContainer(data-aos='flip-left' data-aos-easing="linear" data-aos-duration="500" data-aos-delay="1000")
+      section.cardsContainer(data-aos='flip-left' data-aos-easing="linear" data-aos-duration="500" data-aos-delay="500")
         h3 Alguno los cursos que he aprobado
         .cards 
           .card.card1
@@ -365,7 +365,7 @@ html(lang="es")
 
         a.titlegreen(href="https://platzi.com/p/andresbattistini/" target="blank") Ver todos los cursos aprobados
       // --------------------------------------------- contacto
-      section#Contact.contact(data-aos='zoom-out' data-aos-easing="linear" data-aos-duration="500" )
+      section#Contact.contact(data-aos='zoom-out' data-aos-easing="linear" data-aos-duration="600" data-aos-delay="500" )
         h5 Qué sigue?
         h3 Pongámonos en contacto!
         p Estoy buscando mi primer empleo como desarrollador  Front End estoy disponible  siempre trato de dar lo mejor de  mi en todo lo que hago!
@@ -381,5 +381,7 @@ html(lang="es")
     script(src="src/js/aos.js")
     script.
       AOS.init({
-        delay:300,once:true
+        once:true
       });
+
+      

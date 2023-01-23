@@ -243,9 +243,9 @@ body {
 }
 
 @media(max-width: 461px){
-/*   html body .container1 .infoContainer{
-    padding: 10px;
-  } */
+  html body .container1 .infoContainer .social{
+    text-align: center;
+  }
   html body .container3{
     text-align: center;
     grid-template-columns: 1fr;

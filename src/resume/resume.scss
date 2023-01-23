@@ -241,3 +241,23 @@ body {
     }
   }
 }
+
+@media(max-width: 461px){
+  html body .container3{
+    text-align: center;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "onef onef onef"
+        "twof twof twof"
+        "threef threef threef";
+    & .skillContainer2 {
+      border-top: 1px solid whitesmoke;
+      & h3 {
+        margin-top: 10px;
+      }
+    }
+    & .skillContainer3 h3{
+      margin-top: 10px;
+    }
+  }
+  }

@@ -306,3 +306,37 @@ body .container3 .skillContainer3 .spani i {
     -ms-grid-column-span: 1;
   }
 }
+@media (max-width: 461px) {
+  html body .container3 {
+    text-align: center;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+        grid-template-areas: "onef onef onef" "twof twof twof" "threef threef threef";
+  }
+  html body .container3 .skillContainer2 {
+    border-top: 1px solid whitesmoke;
+  }
+  html body .container3 .skillContainer2 h3 {
+    margin-top: 10px;
+  }
+  html body .container3 .skillContainer3 h3 {
+    margin-top: 10px;
+  }
+  html body .container3 > .skillContainer1 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+  html body .container3 > .skillContainer2 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+  html body .container3 > .skillContainer3 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+}

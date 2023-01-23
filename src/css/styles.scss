@@ -121,7 +121,7 @@ section {
 .introContent {
   display: block;
   animation: introContent 3650ms ease-in-out forwards;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -152,6 +152,7 @@ section {
 .logoIntro {
   display: inherit;
   animation: circuloIntro 4s ease-in-out forwards;
+  
 }
 
 @keyframes circuloIntro {
@@ -188,20 +189,29 @@ section {
   position: relative;
   display: inherit;
   animation: intro 4s ease-in-out forwards;
-  opacity: 1;
+
 }
 
 @keyframes intro {
   0% {
-    opacity: 0;
+    height: 10px;
+    visibility: hidden;
   }
-  70% {
-    opacity: 0;
+  50% {
+    height: 10px;
+    visibility: hidden;
+  }
+  99% {
+    height: 10px;
+    visibility: hidden;
   }
   100% {
-    opacity: 1;
+    visibility: visible;
   }
 }
+
+
+
 
 //-------------------------------------------------------header
 header {
@@ -443,8 +453,27 @@ body {
     overflow-y: visible;
   }
 }
+
 //-------------------------------------------------------main
+@keyframes maina {
+  0% {
+    height: 10px;
+    visibility: hidden;
+  }
+  50% {
+    height: 10px;
+    visibility: hidden;
+  }
+  99% {
+    height: 10px;
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
 main {
+  animation: maina 4s ease-in-out forwards;
   overflow-x: hidden;
   display: flex;
   z-index: 0;

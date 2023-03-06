@@ -30,8 +30,8 @@ body .container1 {
   grid-area: one;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 0.3fr 1fr 1fr;
-  grid-template-rows: 1fr 0.3fr 1fr 1fr;
+  -ms-grid-rows: 0.5fr 0.3fr 0.3fr 0.4fr;
+  grid-template-rows: 0.5fr 0.3fr 0.3fr 0.4fr;
   justify-items: center;
   -webkit-box-align: space-between;
       -ms-flex-align: space-between;
@@ -57,8 +57,18 @@ body .container1 .perfil {
 }
 body .container1 .about {
   position: relative;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  height: 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   /*       &::before{
           content: " ";
           position: absolute;
@@ -68,15 +78,18 @@ body .container1 .about {
         } */
 }
 body .container1 .about h3 {
+  width: 100%;
+}
+body .container1 .about h3 {
   margin-bottom: 10px;
 }
 body .container1 .infoContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: self-start;
+      -ms-flex-align: self-start;
+          align-items: self-start;
   gap: 10px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -120,21 +133,22 @@ body .container2 {
   display: -ms-grid;
   display: grid;
   gap: 20px;
+  padding: 15px;
   -ms-grid-columns: 1fr 20px 1fr;
   grid-template-columns: repeat(2, 1fr);
   place-items: center;
   border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
   font-size: 14px;
 }
 body .container2 p {
   padding: 10px;
   text-align: left;
-  max-width: 250px;
+  max-width: 450px;
   padding: 10px;
   text-align: left;
   line-height: 19px;
   letter-spacing: 0.5px;
+  font-size: 18px;
 }
 body .container2 .educacion .educacionContainer1 a {
   color: whitesmoke;
@@ -235,6 +249,9 @@ body .container3 .skillContainer3 .spani {
 body .container3 .skillContainer3 .spani i {
   color: rgba(255, 7, 7, 0.5607843137);
   margin-bottom: 5px;
+}
+body .educacionContainer1 h2, body .experienciaContainer1 h2 {
+  margin-bottom: 10px;
 }
 
 @media (max-width: 828px) {

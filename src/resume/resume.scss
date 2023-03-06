@@ -25,7 +25,7 @@ body {
     max-width: 330px;
     grid-area: one;
     display: grid;
-    grid-template-rows: 1fr .3fr 1fr 1fr;
+    grid-template-rows: .5fr .3fr 0.3fr 0.4fr;
     justify-items: center;
     align-items: space-between;
     padding: 15px 15px;
@@ -43,7 +43,14 @@ body {
   }
     & .about{
       position: relative;
-      align-self: flex-end;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      height: 100%;
+      justify-content: start;
+      & h3{
+        width: 100%;
+      }
       & h3{
         margin-bottom: 10px;
       }
@@ -57,7 +64,7 @@ body {
     }
     & .infoContainer{
       display: flex;
-      align-items: center;
+      align-items: self-start;
       gap: 10px;
       justify-content: space-between;
       width: 100%;
@@ -97,20 +104,22 @@ body {
     grid-area: two;
     display: grid;
     gap: 20px;
+    padding: 15px;
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
     border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+
     font-size: 14px;
 
     & p{
       padding: 10px;
       text-align: left;
-      max-width: 250px;
+      max-width: 450px;
       padding: 10px;
       text-align: left;
       line-height: 19px;
       letter-spacing: .5px;
+      font-size: 18px;
     }
     & .educacion{
 
@@ -191,6 +200,10 @@ body {
       }
     }
   }
+
+.educacionContainer1 h2, .experienciaContainer1 h2{
+  margin-bottom: 10px;
+ }
   
 }
 
@@ -218,6 +231,7 @@ body {
     }
     & .about{
       max-width: 510px;
+      
       
     }
   } 
